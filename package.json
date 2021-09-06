@@ -1,0 +1,28 @@
+{
+  "name": "second",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodemon serverjs.js",
+  "scripts": {
+    "start": "nodemon serverjs.js"
+  },
+  "keywords": [
+    "ejs",
+    "npm",
+    "mongodb",
+    "ejs"
+  ],
+  "author": "Ogheneruno",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.5.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.3",
+    "randomstring": "^1.2.1"
+  }
+}
