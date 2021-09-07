@@ -11,7 +11,7 @@ const User = require('./models/USmodel');
 
 //DB connection
 
-mongoose.connect('mongodb+srv://Ogheneruno:Fresco495@runo.pdvi8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb://localhost/waawsurveyform')
 .then(dbconnect => console.log('Database connection successful'))
 .catch(error => console.log('Database connection error: ', error.message))
 
@@ -77,7 +77,7 @@ surveyApp.post('/surveyform/submit-surveyform',(request, response) => {
     });
 
     newSurvey.save()
-    .then (({title, description, location, startDate, endDate, user_ID}) => console.log('Survey Submitted', request.body))
+    .then ((content) => console.log('Survey Submitted', content))
     .catch (() => console.log('Unable to submit survey'))
     response.redirect('/survey');   
     });
