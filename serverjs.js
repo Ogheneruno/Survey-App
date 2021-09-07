@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const surveyApp = express();
 const ejs = require('ejs');
-const port = process.env.PORT || 3020;
+const port = process.env.PORT || 3010;
 const mongoose = require('mongoose');
 const randomstring = require('randomstring')
 const Survey = require('./models/SVmodel');
@@ -11,7 +11,7 @@ const User = require('./models/USmodel');
 
 //DB connection
 
-mongoose.connect('mongodb://localhost:27017/waawsurveyform')
+mongoose.connect('mongodb+srv://Ogheneruno:<password>@runo.pdvi8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 .then(dbconnect => console.log('Database connection successful'))
 .catch(error => console.log('Database connection error: ', error.message))
 
