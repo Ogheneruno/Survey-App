@@ -4,7 +4,7 @@
   "description": "",
   "main": "nodemon serverjs.js",
   "scripts": {
-    "start": "nodemon serverjs.js"
+    "start": "node serverjs.js"
   },
   "keywords": [
     "ejs",
