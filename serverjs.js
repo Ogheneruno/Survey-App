@@ -11,7 +11,7 @@ const User = require('./models/USmodel');
 
 //DB connection
 
-mongoose.connect('mongodb://localhost/waawsurveyform')
+mongoose.connect('mongodb+srv://Ogheneruno:Fresco495@runo.pdvi8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority ')
 .then(dbconnect => console.log('Database connection successful'))
 .catch(error => console.log('Database connection error: ', error.message))
 
